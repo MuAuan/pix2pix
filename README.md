@@ -27,6 +27,8 @@ https://github.com/tommyfms2/pix2pix-keras-byt
  上記サイトを参照願います
  
  ３．出力はTrainigとVaridationの二つがでます。
+ 　／figureに格納しました。
+  
  　４００回回して、比較的きれいな以下のようなものが出力されます。
   　どちらも、
   　　上段が元画像をCannyした線画
