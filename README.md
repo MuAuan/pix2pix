@@ -48,13 +48,11 @@ https://github.com/tommyfms2/pix2pix-keras-byt
 
    どちらも、
    
-  　　上段が元画像をCannyした線画
-    
-    　中断がGenerateされた画像
-     
-    　下段が元画像
-     
-     です。
+  　上段が元画像をCannyした線画
+    中断がGenerateされた画像
+    下段が元画像
+   
+   です。
      
 #pix2pix_alt.py
 
