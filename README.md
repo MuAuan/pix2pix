@@ -14,7 +14,9 @@ https://github.com/tommyfms2/pix2pix-keras-byt
 簡単に説明すると以下の通りです。
 １．img2h5.pyで入力ファイルを作成する
 　実行は以下のとおり、images/にカテゴリ毎にディレクトリを作成して画像を配置しています。
+ """
 　python img2h5.py -i images/ -o datasetimages -t canny
+ """
  出力は、datasetimgesというファイルが作成されます。
  
 　※画像はカテゴリ毎に読み込みと合わせて配置してください。　
@@ -22,8 +24,10 @@ https://github.com/tommyfms2/pix2pix-keras-byt
 　　　元画像を保存したい場合はあらかじめコピーするか、別途ディレクトリを決めてそこに保存・取得するように変更してください。
 
 ２．Trainingは以下で実行
+"""
 　python pix2pix.py -d datasetimages.hdf5
- オプションがあるみたいですが、使いませんでした。
+"""
+オプションがあるみたいですが、使いませんでした。
  上記サイトを参照願います
  
  ３．出力はTrainigとVaridationの二つがでます。
@@ -36,5 +40,13 @@ https://github.com/tommyfms2/pix2pix-keras-byt
     　下段が元画像
      です。
      
-     
-  
+#pix2pix_alt.py
+##①データをTrain、Test分離して入力
+##②parameterの入出力対応
+##③結果を間引いて出力
+
+#データ作成をTrain、Testに分けて作成
+"""
+python img2h5_4TrainData.py -i images/ -o dataset4Train -t canny 
+python img2h5_4TestData.py -i images/ -o dataset4Test -t canny 
+"""
