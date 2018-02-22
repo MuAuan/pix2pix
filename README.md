@@ -68,3 +68,6 @@ python img2h5_4TrainData.py -i images/ -o dataset4Train -t canny 
 
 python img2h5_4TestData.py -i images/ -o dataset4Test -t canny 
 
+## models.pyにencoder-decoderも実行できるように改変
+def up_conv_block_unet_alt(x, x2, f, name, bn_axis, bn=True, dropout=False):
+を追加した。
